@@ -1,13 +1,9 @@
 # #TWSThreeTierAppChallenge
 
 ## Overview
-This repository hosts the `#TWSThreeTierAppChallenge` for the TWS community. 
-The challenge involves deploying a Three-Tier Web Application using ReactJS, NodeJS, and MongoDB, with deployment on AWS EKS. Participants are encouraged to deploy the application, add creative enhancements, and submit a Pull Request (PR). Merged PRs will earn exciting prizes!
+This repository hosts the `#TWSThreeTierAppChallenge`. 
+The challenge involves deploying a Three-Tier Web Application using ReactJS, NodeJS, and MongoDB, with deployment on AWS EKS.
 
-
-## Prerequisites
-- Basic knowledge of Docker, and AWS services.
-- An AWS account with necessary permissions.
 
 ## Challenge Steps
 - [Application Code](#application-code)
@@ -29,14 +25,14 @@ Explore the `Jenkins-Server-TF` directory to find Terraform scripts for setting 
 The `Kubernetes-Manifests-Files` directory holds Kubernetes manifests for deploying your application on AWS EKS. Understand and customize these files to suit your project needs.
 
 ## Project Details
-🛠️ **Tools Explored:**
+🛠️ **Tools:**
 - Terraform & AWS CLI for AWS infrastructure
 - Jenkins, Sonarqube, Terraform, Kubectl, and more for CI/CD setup
 - Helm, Prometheus, and Grafana for Monitoring
 - ArgoCD for GitOps practices
 
 🚢 **High-Level Overview:**
-- IAM User setup & Terraform magic on AWS
+- IAM User setup & Terraform on AWS
 - Jenkins deployment with AWS integration
 - EKS Cluster creation & Load Balancer configuration
 - Private ECR repositories for secure image management
