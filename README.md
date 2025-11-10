@@ -124,15 +124,15 @@ eksctl create iamserviceaccount \
 sudo snap install helm --classic
 helm repo add eks https://aws.github.io/eks-charts
 helm repo update eks
-helm install aws-load-balancer-controller eks/aws-load-balancer-controller -n kube-system --set clusterName=my-cluster --set serviceAccount.create=false --set serviceAccount.name=aws-load-balancer-controller
+helm install aws-load-balancer-controller eks/aws-load-balancer-controller -n kube-system --set clusterName=three-tier-cluster --set serviceAccount.create=false --set serviceAccount.name=aws-load-balancer-controller
 kubectl get deployment -n kube-system aws-load-balancer-controller
-kubectl apply -f full_stack_lb.yaml
+kubectl apply -f ingress.yaml
 ```
 
 ### Cleanup
 - To delete the EKS cluster:
 ``` shell
-eksctl delete cluster --name three-tier-cluster --region us-west-2
+eksctl delete cluster --name three-tier-cluster --region ap-south-1
 ```
 - To clean up rest of the stuff and not incure any cost
 ```
